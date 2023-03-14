@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
   <button (click)="acumular(-base)">-{{base}}</button>
   `
 })
-export class ContadorComponent extends Component{
+export class ContadorComponent {
   title: string = 'Contador App';
   numero: number = 10;
   base: number = 5;
