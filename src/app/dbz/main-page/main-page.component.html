@@ -5,9 +5,7 @@
     <h3>Personajes</h3>
     <hr>
     <ul>
-      <li>a-7</li>
-      <li>b-8</li>
-      <li>c-9</li>
+      <li *ngFor="let personaje of personajes">{{personaje.nombre}} - {{personaje.poder | number}}</li>
     </ul>
   </div>
   <div class="col">
