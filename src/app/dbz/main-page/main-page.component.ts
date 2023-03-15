@@ -21,13 +21,4 @@ export class MainPageComponent {
       poder:2000
     },
   ]
-
-  agregar(){
-    if(this.nuevo.nombre.length<=0) return;
-    this.personajes.push(this.nuevo);
-    this.nuevo = {
-      nombre:'',
-      poder:0
-    }
-  }
 }
