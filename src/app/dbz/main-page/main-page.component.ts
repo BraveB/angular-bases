@@ -20,5 +20,8 @@ export class MainPageComponent {
       nombre: 'Vegeta',
       poder:2000
     },
-  ]
+  ];
+  agregarNuevoPersonaje(nuevoPersonaje:Personaje){
+    this.personajes.push(nuevoPersonaje)
+  }
 }
