@@ -11,11 +11,13 @@ export class AgregarComponent {
     nombre:'',
     poder: 0
   };
-  @Output() onNuevoPersonaje: EventEmitter<Personaje> = new EventEmitter();
+
+  // @Output() onNuevoPersonaje: EventEmitter<Personaje> = new EventEmitter();
 
   agregar(){
     if(this.nuevo.nombre.length<=0) return;
-    this.onNuevoPersonaje.emit(this.nuevo);
+    // this.onNuevoPersonaje.emit(this.nuevo);
+    this.dbzService.agregarPersonaje(this.nuevo);
     this.nuevo = {
       nombre:'',
       poder:0
